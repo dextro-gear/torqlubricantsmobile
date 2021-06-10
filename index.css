@@ -14,24 +14,10 @@
   --line-height-large: 163.5%;
 }
 
+::selection,
 ::-moz-selection {
   background-color: var(--secondary-orange);
   color: white;
-}
-
-::selection {
-  background-color: var(--secondary-orange);
-  color: white;
-}
-
-::-webkit-scrollbar {
-  background-color: black;
-  width: 0.5rem;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #eeeeee;
-  border-radius: 10px;
 }
 
 * {
@@ -44,7 +30,7 @@ html {
   min-height: 100vh;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  font-size: 10px;
+  font-size: 62.5%;
   overflow-x: hidden;
   scroll-behavior: smooth;
   -webkit-transform: translate3d(0);
@@ -74,7 +60,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--small-padding);
+  padding: 4rem var(--small-padding);
 }
 
 .nav-logo img {
@@ -93,7 +79,7 @@ nav {
 
 .text {
   padding: 0 var(--small-padding);
-  margin-top: 7rem;
+  margin-top: 4rem;
 }
 
 .text h1 {
@@ -117,7 +103,6 @@ nav {
 }
 
 .button-group {
-  display: none;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -387,7 +372,7 @@ nav {
 
 .grid-img-text > p {
   color: white;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin: 0;
   letter-spacing: -0.05em;
   font-variation-settings: "wght" 600;
@@ -499,8 +484,7 @@ nav {
   width: 100%;
   box-sizing: border-box;
   justify-content: space-around;
-  padding: var(--small-padding) 0;
-  border-radius: 20px;
+  padding: var(--small-padding);
   box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.05);
 }
 
@@ -509,7 +493,7 @@ nav {
 }
 
 .count-text {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-variation-settings: "wght" 550;
   color: var(--primary-blue);
   display: inline-block;
@@ -674,7 +658,7 @@ nav {
   position: relative;
   display: inline-block;
   color: black;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-variation-settings: "wght" 400;
   letter-spacing: var(--letter-spacing-small);
   line-height: var(--line-height-large);
@@ -712,7 +696,7 @@ footer {
   color: white;
   background-color: var(--primary-blue);
   letter-spacing: -0.05em;
-  padding: 3rem var(--small-padding);
+  padding: 3rem var(--small-padding) 12rem var(--small-padding);
 }
 
 footer a {
@@ -802,3 +786,161 @@ footer h4 {
   margin-right: 0.5rem;
 }
 /* Footer */
+
+/* iPhone X Responsiveness */
+@media only screen and (device-width: 375px) and (device-height: 812px) {
+  nav {
+    padding: 4rem var(--small-padding);
+  }
+
+  .nav-logo {
+    width: 12rem;
+  }
+
+  .hamburger {
+    font-size: 3em;
+  }
+
+  .text {
+    margin-top: 12rem;
+  }
+
+  .text h1 {
+    font-size: 4rem;
+  }
+
+  .text p {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .count-text {
+    font-size: 1.8rem;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .card-desc {
+    font-size: 1rem;
+  }
+
+  .faq-accordion-ques,
+  .faq-accordion-ans {
+    font-size: 1.4rem;
+  }
+
+  .grid-img-text > p {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (device-width: 375px) and (device-height: 667px) {
+  .nav-logo {
+    width: 10rem;
+  }
+
+  .hamburger {
+    font-size: 3em;
+  }
+
+  .text {
+    margin-top: 6rem;
+  }
+
+  .text h1 {
+    font-size: 4rem;
+  }
+
+  .text p {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .count-text {
+    font-size: 1.8rem;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .card-desc {
+    font-size: 1rem;
+  }
+
+  .faq-accordion-ques,
+  .faq-accordion-ans {
+    font-size: 1.4rem;
+  }
+
+  .grid-img-text > p {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (min-device-width: 411px) {
+  :root {
+    --small-padding: 3rem;
+  }
+
+  .nav-logo {
+    width: 10rem;
+  }
+
+  .hamburger {
+    font-size: 3em;
+  }
+
+  .text {
+    margin-top: 8rem;
+  }
+
+  .text h1 {
+    font-size: 4rem;
+  }
+
+  .text p {
+    font-size: 1.5rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .text-container .desc {
+    font-size: 1.5rem;
+  }
+
+  .count-text {
+    font-size: 1.8rem;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .card-desc {
+    font-size: 1rem;
+  }
+
+  .faq-accordion-ques,
+  .faq-accordion-ans {
+    font-size: 1.4rem;
+  }
+
+  .grid-img-text > p {
+    font-size: 1.6rem;
+  }
+
+  .grid-unit {
+    height: 13rem;
+  }
+}
