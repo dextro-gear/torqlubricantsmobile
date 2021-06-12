@@ -377,7 +377,7 @@ footer {
   color: white;
   background-color: var(--primary-blue);
   letter-spacing: -0.05em;
-  padding: 3rem var(--small-padding) 12rem var(--small-padding);
+  padding: 3rem var(--small-padding);
 }
 
 footer a {
@@ -467,3 +467,179 @@ footer h4 {
   margin-right: 0.5rem;
 }
 /* Footer */
+
+@media only screen and (device-width: 375px) and (device-height: 812px) {
+  nav {
+    padding: 4rem var(--small-padding);
+  }
+
+  .nav-logo {
+    width: 12rem;
+  }
+
+  .hamburger {
+    font-size: 3em;
+  }
+
+  .text {
+    margin-top: 2rem;
+  }
+
+  .text h1 {
+    font-size: 4rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .text-container .desc {
+    font-size: 1.5rem;
+  }
+
+  .checklist-unit p {
+    font-size: 1.35rem;
+  }
+
+  .infra-tagline {
+    font-size: 1.35rem;
+  }
+
+  .infra-flex-unit {
+    flex-basis: 45%;
+  }
+
+  .business-image {
+    width: 10rem;
+  }
+
+  .unit-text .title {
+    font-size: 1.7rem;
+  }
+
+  .unit-text .desc {
+    font-size: 1.35rem;
+    line-height: var(--line-height-small);
+  }
+
+  .vision-text {
+    font-size: 1.4rem;
+  }
+
+  .values-image {
+    width: 9rem;
+  }
+
+  .values-unit-title {
+    font-size: 1.9rem;
+  }
+
+  .values-unit-desc {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (device-width: 375px) and (device-height: 667px) {
+  .nav-logo {
+    width: 10rem;
+  }
+
+  .hamburger {
+    font-size: 3em;
+  }
+
+  .text h1 {
+    font-size: 4rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .infra-flex-unit {
+    flex-basis: 40%;
+  }
+}
+
+@media only screen and (min-device-width: 411px) {
+  :root {
+    --small-padding: 3rem;
+  }
+
+  .nav-logo {
+    width: 10rem;
+  }
+
+  .hamburger {
+    font-size: 3em;
+  }
+
+  .text {
+    margin-top: 2rem;
+  }
+
+  .text-flex .desc {
+    font-size: 1.35rem;
+  }
+
+  .text h1 {
+    font-size: 4rem;
+  }
+
+  .text p {
+    font-size: 1.35rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .text-container .desc {
+    font-size: 1.5rem;
+  }
+
+  .checklist-unit p {
+    font-size: 1.35rem;
+  }
+
+  .infra-tagline {
+    font-size: 1.35rem;
+  }
+
+  .infra-flex-unit {
+    flex-basis: 45%;
+  }
+
+  .business-image {
+    width: 10rem;
+  }
+
+  .unit-text .title {
+    font-size: 1.7rem;
+  }
+
+  .unit-text .desc {
+    font-size: 1.35rem;
+    line-height: var(--line-height-small);
+  }
+
+  .vision-text {
+    font-size: 1.4rem;
+  }
+
+  .values-image {
+    width: 9rem;
+  }
+
+  .values-unit-title {
+    font-size: 1.9rem;
+  }
+
+  .values-unit-desc {
+    font-size: 1.4rem;
+  }
+}
