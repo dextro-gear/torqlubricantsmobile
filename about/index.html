@@ -15,9 +15,117 @@
     ></script>
     <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
+    <!-- Menu start -->
+    <nav class="nav-menu">
+      <div class="search-bar">
+        <script
+          async
+          src="https://cse.google.com/cse.js?cx=1562062074a5f966d"
+        ></script>
+        <div class="gcse-search"></div>
+      </div>
+      <div class="nav-links-container">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/about">About</a>
+        <div class="dropdown-accordion">
+          <div class="dropdown-accordion-item">
+            <span
+              class="iconify"
+              data-icon="ls:dropdown"
+              data-inline="false"
+            ></span>
+            <span>Products</span>
+          </div>
+          <div class="dropdown-accordion-links">
+            <div class="dropdown-links-unit">
+              <p class="product-title">GREASES</p>
+              <a href="/products/ep/">Heavy Load & EP Grease</a>
+              <a href="/products/hightemp/">High Temperature Grease</a>
+              <a href="/products/waterresistant/">Water-resistant Grease</a>
+              <a href="/products/highspeed/">High Speed Grease</a>
+              <a href="/products/multi/"
+                >Multi-purpose High Performance Grease</a
+              >
+            </div>
+            <div class="dropdown-links-unit">
+              <p class="product-title">OILS</p>
+              <a href="/products/synthetic/">Synthetic Gear Oils</a>
+              <a href="/products/foodgrade-oils/">Food Grade Oils</a>
+              <a href="/products/silicone-oils/">Silicone Oils</a>
+              <a href="/products/chain/">Chain Oils</a>
+            </div>
+            <div class="dropdown-links-unit">
+              <p class="product-title">SPECIALITIES</p>
+              <a href="/products/foodgrade-grease/">Food Grade Grease</a>
+              <a href="/products/opengear/">Open Gear Grease</a>
+              <a href="/products/silicone-grease/">Silicone Grease</a>
+              <a href="/products/fluid/">Fluid Grease</a>
+              <a href="/products/wirerope/">Wire Rope Compound</a>
+            </div>
+            <div class="dropdown-links-unit">
+              <p class="product-title">PASTES</p>
+              <a href="/products/copper/">Anti-Seize Copper Paste</a>
+              <a href="/products/moly/">Anti-Seize Moly Paste</a>
+              <a href="/products/nickel/">Anti-Seize Nickel Paste</a>
+              <a href="/products/chuck/">Chuck Jaw Paste</a>
+              <a href="/products/chisel/">Chisel Paste</a>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown-accordion">
+          <div class="dropdown-accordion-item">
+            <span
+              class="iconify"
+              data-icon="ls:dropdown"
+              data-inline="false"
+            ></span>
+            <span>Industries</span>
+          </div>
+          <div class="dropdown-accordion-links">
+            <div class="dropdown-links-unit">
+              <a href="/industries/iron/">Iron & Steel</a>
+              <a href="/industries/mining/">Mining</a>
+              <a href="/industries/cement/">Cement</a>
+              <a href="/industries/paper/">Paper & Packaging</a>
+              <a href="/industries/automobile/">Automobile</a>
+              <a href="/industries/textile/">Textile</a>
+              <a href="/industries/sugar/">Sugar</a>
+              <a href="/industries/infra/">Infrastructure</a>
+              <a href="/industries/pharma/">Pharma & Food</a>
+              <a href="/industries/chemical/">Chemicals</a>
+              <a href="/industries/plastic/">Plastic</a>
+              <a href="/industries/electronic/">General Electronics</a>
+              <a href="/industries/power/">Power & Energy</a>
+              <a href="/industries/wind/">Wind Power</a>
+              <a href="/industries/marine/">Marine & Offshore</a>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown-accordion">
+          <div class="dropdown-accordion-item">
+            <span
+              class="iconify"
+              data-icon="ls:dropdown"
+              data-inline="false"
+            ></span>
+            <span>Contact us</span>
+          </div>
+          <div class="dropdown-accordion-links">
+            <div class="dropdown-links-unit">
+              <a href="/buy/">Buy from us</a>
+              <a href="/work/">Work with us</a>
+              <a href="/partner/">Partner with us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="nav-overlay"></div>
+    <!-- Menu end -->
+
     <!-- Hero section starts-->
     <section class="hero">
-      <nav>
+      <nav class="navbar">
         <div class="nav-logo">
           <img src="/public/logo.svg" alt="TORQ Logo White" />
         </div>
@@ -592,5 +700,46 @@
       <div class="copyright">Copyright © 2020 Tribo – All Rights Reserved</div>
     </footer>
     <!-- Footer end -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      $(window).ready(function () {
+        var navDropdowns = document.querySelectorAll(".dropdown-accordion");
+        navDropdowns.forEach((dropdown) => {
+          dropdown.addEventListener("click", () => {
+            dropdown.classList.toggle("dropdown-open");
+          });
+        });
+
+        var navMenu = document.querySelector(".nav-menu");
+        var navOverlay = document.querySelector(".nav-overlay");
+        var hamburger = document.querySelector(".hamburger");
+        var body = document.querySelector("body");
+        var html = document.querySelector("html");
+
+        console.log(navMenu);
+        console.log(navOverlay);
+        console.log(hamburger);
+        console.log(html);
+        console.log(body);
+
+        hamburger.addEventListener("click", () => {
+          navOverlay.classList.add("show");
+          navMenu.classList.add("show-nav");
+          body.classList.add("stop-scroll");
+          html.classList.add("stop-scroll");
+        });
+
+        navOverlay.addEventListener("click", () => {
+          navOverlay.classList.remove("show");
+          navMenu.classList.remove("show-nav");
+          body.classList.remove("stop-scroll");
+          html.classList.remove("stop-scroll");
+        });
+      });
+    </script>
   </body>
 </html>
