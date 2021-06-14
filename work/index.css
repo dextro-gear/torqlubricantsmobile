@@ -238,6 +238,13 @@ nav > .hamburger {
   margin: 0 0 3rem 0;
 }
 
+.nojob {
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: var(--letter-spacing-small);
+  font-variation-settings: "wght" 550;
+}
+
 .accordion {
   width: 100%;
 }
