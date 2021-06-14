@@ -754,3 +754,13 @@ footer h4 {
     font-size: 1.4rem;
   }
 }
+
+@media only screen and (device-width: 390px) and (device-height: 844px) {
+  .infra-flex-unit {
+    flex-basis: 50%;
+  }
+
+  :root {
+    --small-padding: 3.5rem;
+  }
+}
