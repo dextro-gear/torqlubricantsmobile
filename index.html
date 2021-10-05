@@ -815,13 +815,9 @@
       <div class="copyright">Copyright © 2020 Tribo – All Rights Reserved</div>
     </footer>
     <!-- Footer end -->
-    <script src="http://unpkg.com/animejs@3.2.1/lib/anime.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
+    <script src="/anime.min.js"></script>
+    <script src="/swiper-bundle.min.js"></script>
+    <script src="/jquery-3.6.0.min.js"></script>
     <script>
       var textArray = document.querySelectorAll(".carousel-text");
       var index = 0;
@@ -851,13 +847,16 @@
         index = (((index + move) % n) + n) % n;
       }
 
-      $(window).on("load resize", function () {
-        if ($(window).width() >= 1024) {
-          window.location = "http://www.tribo.in";
-        }
-      });
+      // $(window).on("load resize", function () {
+      //   if ($(window).width() >= 1024) {
+      //     window.location = "http://www.tribo.in";
+      //     console.log("loaded!");
+      //   }
+      // });
 
-      // $(window).load(function () {
+      $(window).on("load", function () {
+        console.log("loaded!");
+        alert("loaded!");
         var navMenu = document.querySelector(".nav-menu");
         var navOverlay = document.querySelector(".nav-overlay");
         var hamburger = document.querySelector(".hamburger");
@@ -877,7 +876,7 @@
           body.classList.remove("stop-scroll");
           html.classList.remove("stop-scroll");
         });
-      // });
+      });
 
       $(window).ready(function () {
         var timeline = anime.timeline();
