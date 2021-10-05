@@ -802,7 +802,7 @@ footer {
   color: white;
   background-color: var(--primary-blue);
   letter-spacing: -0.05em;
-  padding: 3rem var(--small-padding);
+  padding: 3rem var(--small-padding) 10rem var(--small-padding);
 }
 
 footer a {
